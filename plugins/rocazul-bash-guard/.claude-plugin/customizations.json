@@ -1,17 +1,17 @@
 {
   "origin": {
     "type": "github",
-    "repo": "dmedina-dev/dev-forge",
-    "path": "plugins/forge-security",
+    "repo": "jvillar/claude-plugins",
+    "path": "plugins/bash-guard",
     "ref": "main",
-    "commit": "14f138d78b04e700497295d91780342351a67939",
+    "commit": "58e27a3951aeb8ce982a67eccd26044442ad1e32",
     "fetched_at": "2026-05-26",
-    "check_url": "https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security"
+    "check_url": "https://github.com/jvillar/claude-plugins/tree/main/plugins/bash-guard"
   },
   "upstream_status": {
     "last_checked": "2026-05-26",
     "latest_ref": "main",
-    "latest_commit": "14f138d78b04e700497295d91780342351a67939",
+    "latest_commit": "58e27a3951aeb8ce982a67eccd26044442ad1e32",
     "has_updates": false,
     "summary": "Fork inicial sin cambios funcionales sobre el upstream.",
     "changes": []
@@ -21,27 +21,15 @@
       "id": "custom-01",
       "type": "renamed",
       "target": ".claude-plugin/plugin.json",
-      "summary": "Renombrado de forge-security a rocazul-security-shield",
+      "summary": "Renombrado de bash-guard a rocazul-bash-guard",
       "reason": "Branding propio del marketplace rocazul-marketplace-poc."
     },
     {
       "id": "custom-02",
       "type": "modified",
       "target": ".claude-plugin/plugin.json",
-      "summary": "Autor y versión reseteados",
+      "summary": "Autor, descripción en español y versión reseteada",
       "reason": "Autor: Pablo Pena. Versión reiniciada a 0.1.0 al ser fork POC."
-    }
-  ],
-  "ancestry": [
-    {
-      "repo": "anthropics/claude-code",
-      "path": "plugins/security-guidance",
-      "role": "upstream original"
-    },
-    {
-      "repo": "dmedina-dev/dev-forge",
-      "path": "plugins/forge-security",
-      "role": "fuente directa de este fork"
     }
   ]
 }
