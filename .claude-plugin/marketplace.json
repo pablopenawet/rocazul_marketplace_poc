@@ -1,0 +1,12 @@
+{
+  "name": "rocazul-marketplace-poc",
+  "owner": {
+    "name": "Pablo Pena",
+    "email": "pablopena@wetaca.com"
+  },
+  "metadata": {
+    "description": "Marketplace POC para plugins de Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": []
+}
