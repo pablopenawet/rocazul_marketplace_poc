@@ -1,0 +1,9 @@
+{
+  "name": "rocazul-bash-guard",
+  "version": "0.1.0",
+  "description": "Guardián de Bash en dos etapas para Claude Code: chequeo estático rápido + fallback LLM para casos inciertos. Auto-permite comandos acotados al proyecto y pregunta ante cualquier cosa arriesgada. Fork de jvillar/claude-plugins/bash-guard.",
+  "author": {
+    "name": "Pablo Pena",
+    "email": "pablopena@wetaca.com"
+  }
+}

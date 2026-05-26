@@ -6,9 +6,24 @@
   },
   "metadata": {
     "description": "Marketplace POC para plugins de Claude Code.",
-    "version": "0.3.2"
+    "version": "0.4.0"
   },
   "plugins": [
+    {
+      "name": "rocazul-bash-guard",
+      "description": "Guardián de Bash en dos etapas: chequeo estático rápido (allow/ask/uncertain) + fallback LLM (Haiku) para casos inciertos. Auto-permite comandos acotados al proyecto, pregunta ante cualquier cosa arriesgada. Fork de jvillar/claude-plugins/bash-guard.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pablopenawet/rocazul_marketplace_poc.git",
+        "path": "plugins/rocazul-bash-guard"
+      },
+      "version": "0.1.0",
+      "upstream": {
+        "repo": "jvillar/claude-plugins",
+        "ref": "main",
+        "url": "https://github.com/jvillar/claude-plugins/tree/main/plugins/bash-guard"
+      }
+    },
     {
       "name": "rocazul-security-shield",
       "description": "Security reminder hooks: avisa sobre 9 patrones de vulnerabilidad (XSS, injection, eval, pickle, etc.) al editar archivos. Fork de dev-forge/forge-security (origen: anthropics/claude-code/security-guidance).",
