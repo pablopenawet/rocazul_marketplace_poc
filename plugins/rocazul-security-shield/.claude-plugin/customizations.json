@@ -1,0 +1,45 @@
+{
+  "origin": {
+    "type": "github",
+    "repo": "dmedina-dev/dev-forge",
+    "path": "plugins/forge-security",
+    "ref": "main",
+    "fetched_at": "2026-05-26",
+    "check_url": "https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security"
+  },
+  "upstream_status": {
+    "last_checked": "2026-05-26",
+    "latest_ref": "main",
+    "has_updates": false,
+    "summary": "Fork inicial sin cambios funcionales sobre el upstream.",
+    "changes": []
+  },
+  "customizations": [
+    {
+      "id": "custom-01",
+      "type": "renamed",
+      "target": ".claude-plugin/plugin.json",
+      "summary": "Renombrado de forge-security a rocazul-security-shield",
+      "reason": "Branding propio del marketplace rocazul-marketplace-poc."
+    },
+    {
+      "id": "custom-02",
+      "type": "modified",
+      "target": ".claude-plugin/plugin.json",
+      "summary": "Autor y versión reseteados",
+      "reason": "Autor: Pablo Pena. Versión reiniciada a 0.1.0 al ser fork POC."
+    }
+  ],
+  "ancestry": [
+    {
+      "repo": "anthropics/claude-code",
+      "path": "plugins/security-guidance",
+      "role": "upstream original"
+    },
+    {
+      "repo": "dmedina-dev/dev-forge",
+      "path": "plugins/forge-security",
+      "role": "fuente directa de este fork"
+    }
+  ]
+}

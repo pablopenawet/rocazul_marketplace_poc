@@ -6,7 +6,23 @@
   },
   "metadata": {
     "description": "Marketplace POC para plugins de Claude Code.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "rocazul-security-shield",
+      "description": "Security reminder hooks: avisa sobre 9 patrones de vulnerabilidad (XSS, injection, eval, pickle, etc.) al editar archivos. Fork de dev-forge/forge-security (origen: anthropics/claude-code/security-guidance).",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pablopenawet/rocazul_marketplace_poc.git",
+        "path": "plugins/rocazul-security-shield"
+      },
+      "version": "0.1.0",
+      "upstream": {
+        "repo": "dmedina-dev/dev-forge",
+        "ref": "main",
+        "url": "https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security"
+      }
+    }
+  ]
 }

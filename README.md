@@ -25,6 +25,8 @@ Luego instala plugins con:
 /plugin install <nombre-del-plugin>@rocazul-marketplace-poc
 ```
 
-## Estado
+## Plugins
 
-Marketplace vacío. Aún no se ha publicado ningún plugin.
+| Plugin | Versión | Descripción |
+|---|---|---|
+| [rocazul-security-shield](plugins/rocazul-security-shield) | 0.1.0 | Hook PreToolUse que avisa de patrones inseguros (XSS, injection, eval, pickle, GitHub Actions injection…) en cada Edit/Write/MultiEdit. Fork de [`dev-forge/forge-security`](https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security), que a su vez deriva de [`anthropics/claude-code/security-guidance`](https://github.com/anthropics/claude-code/tree/main/plugins/security-guidance). |

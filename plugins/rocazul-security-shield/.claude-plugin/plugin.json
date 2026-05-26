@@ -1,0 +1,9 @@
+{
+  "name": "rocazul-security-shield",
+  "description": "Security reminder hook: avisa sobre patrones de vulnerabilidad (command injection, XSS, eval, pickle, GitHub Actions injection, etc.) al editar archivos. Pasivo, bajo overhead.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pablo Pena",
+    "email": "pablopena@wetaca.com"
+  }
+}
