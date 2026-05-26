@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Marketplace POC para plugins de Claude Code.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
@@ -23,6 +23,16 @@
         "ref": "main",
         "url": "https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security"
       }
+    },
+    {
+      "name": "rocazul-on-this-day",
+      "description": "Al iniciar sesión, inyecta una efeméride histórica del día actual (vía Wikipedia + fallback offline) como apertura de la conversación.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pablopenawet/rocazul_marketplace_poc.git",
+        "path": "plugins/rocazul-on-this-day"
+      },
+      "version": "0.1.0"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "description": "SessionStart hook que inyecta una efeméride histórica del día como apertura de la sesión.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/daily_anecdote.py"
+          }
+        ]
+      }
+    ]
+  }
+}

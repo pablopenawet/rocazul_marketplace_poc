@@ -1,0 +1,9 @@
+{
+  "name": "rocazul-on-this-day",
+  "description": "Al iniciar sesión, inyecta una efeméride histórica del día actual para que Claude la presente como apertura de la conversación.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pablo Pena",
+    "email": "pablopena@wetaca.com"
+  }
+}
