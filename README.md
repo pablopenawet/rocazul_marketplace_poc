@@ -30,4 +30,4 @@ Luego instala plugins con:
 | Plugin | Versión | Descripción |
 |---|---|---|
 | [rocazul-security-shield](plugins/rocazul-security-shield) | 0.1.0 | Hook PreToolUse que avisa de patrones inseguros (XSS, injection, eval, pickle, GitHub Actions injection…) en cada Edit/Write/MultiEdit. Fork de [`dev-forge/forge-security`](https://github.com/dmedina-dev/dev-forge/tree/main/plugins/forge-security), que a su vez deriva de [`anthropics/claude-code/security-guidance`](https://github.com/anthropics/claude-code/tree/main/plugins/security-guidance). |
-| [rocazul-on-this-day](plugins/rocazul-on-this-day) | 0.1.0 | Hook SessionStart que inyecta una efeméride del día actual (API de Wikipedia "On This Day" con fallback offline en español) para que Claude abra la conversación contándola. |
+| [rocazul-on-this-day](plugins/rocazul-on-this-day) | 0.2.0 | Hook SessionStart que inyecta un saludo aleatorio con personalidad + una efeméride del día actual (API de Wikipedia "On This Day" con fallback offline en español) para que Claude abra la conversación con tono jocoso. |

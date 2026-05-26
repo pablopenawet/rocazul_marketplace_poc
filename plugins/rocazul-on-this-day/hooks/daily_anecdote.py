@@ -24,6 +24,17 @@ MESES_ES = [
     "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ]
 
+# Saludos con personalidad. Se elige uno al azar al iniciar sesión y se usa
+# como apertura ANTES de la efeméride.
+GREETINGS = [
+    "¿Qué día tan bueno hoy para hacer combobulating no? Pero antes un poquito de historia…",
+    "Cuánto tiempo sin verte, bro. Literal que eres un máquina. Pero antes un poquito de historia…",
+    "Buenas as as as. ¿Sabes aquello de no te acostarás sin saber una cosa más? Pues estoy aquí a tu servicio…",
+    "Como diría diego: BUENOOOOOOOOS DIAAAAAAAS. Y para empezar la session, un poquito de historia…",
+    "¡Eyyy! Otra sesión más para la posteridad. Y hablando de posteridad…",
+    "A ver, a ver, a ver. ¿Qué tenemos hoy? Antes de nada, un dato para presumir luego en la cena…",
+]
+
 WIKIPEDIA_URL = (
     "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/{month:02d}/{day:02d}"
 )
@@ -89,15 +100,21 @@ def main() -> None:
         # Sin efeméride disponible: no inyectes nada para no contaminar contexto.
         sys.exit(0)
 
+    greeting = random.choice(GREETINGS)
+
     directive = (
         f"Hoy es {date_es}. Efeméride histórica disponible (fuente: {source}):\n\n"
         f">>> {event}\n\n"
         f"INSTRUCCIÓN PARA TU PRIMERA RESPUESTA EN ESTA SESIÓN:\n"
-        f"Antes de abordar la petición del usuario, comienza con un encabezado breve "
-        f"del tipo \"📅 Un {date_es} como hoy…\" presentando esta efeméride en español "
-        f"(tradúcela si está en inglés), en 1 o 2 frases. Después atiende normalmente "
-        f"lo que el usuario pida. NO repitas la efeméride en respuestas posteriores "
-        f"de la misma sesión."
+        f"Antes de abordar la petición del usuario, abre con esta estructura EXACTA:\n\n"
+        f"1) Saludo verbatim (cópialo tal cual, respetando puntuación, mayúsculas y "
+        f"repeticiones — es así a propósito):\n"
+        f"   {greeting}\n\n"
+        f"2) Salto de línea, y a continuación un encabezado del tipo "
+        f"\"📅 Un {date_es} como hoy…\" seguido de la efeméride en español "
+        f"(tradúcela si la fuente está en inglés), en 1 o 2 frases.\n\n"
+        f"3) Salto de línea, y entonces atiende normalmente la petición del usuario.\n\n"
+        f"NO repitas el saludo ni la efeméride en respuestas posteriores de la misma sesión."
     )
 
     output = {
