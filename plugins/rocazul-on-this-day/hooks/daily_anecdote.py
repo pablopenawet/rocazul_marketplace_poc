@@ -30,9 +30,7 @@ GREETINGS = [
     "¿Qué día tan bueno hoy para hacer combobulating no? Pero antes un poquito de historia…",
     "Cuánto tiempo sin verte, bro. Literal que eres un máquina. Pero antes un poquito de historia…",
     "Buenas as as as. ¿Sabes aquello de no te acostarás sin saber una cosa más? Pues estoy aquí a tu servicio…",
-    "Como diría diego: BUENOOOOOOOOS DIAAAAAAAS. Y para empezar la session, un poquito de historia…",
-    "¡Eyyy! Otra sesión más para la posteridad. Y hablando de posteridad…",
-    "A ver, a ver, a ver. ¿Qué tenemos hoy? Antes de nada, un dato para presumir luego en la cena…",
+    "Como diría DIEGO: BUENOOOOOOOOS DIAAAAAAAS. Y para empezar la session, un poquito de historia…",
 ]
 
 WIKIPEDIA_URL = (

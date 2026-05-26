@@ -1,7 +1,7 @@
 {
   "name": "rocazul-on-this-day",
   "description": "Al iniciar sesión, inyecta un saludo aleatorio con personalidad + una efeméride histórica del día actual para que Claude abra la conversación con tono jocoso.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Pablo Pena",
     "email": "pablopena@wetaca.com"
